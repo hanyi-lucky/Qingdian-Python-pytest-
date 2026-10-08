@@ -53,3 +53,8 @@ report/
 *.tmp
 *.bak
 *.orig
+
+# Personal study notes (not part of the project)
+接口自动化测试框架-面试QA.md
+使用前请阅读此文件.md
+is-a-test.py

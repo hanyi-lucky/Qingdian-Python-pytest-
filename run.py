@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import shutil
 import pytest
 import os
@@ -12,10 +13,9 @@ if __name__ == '__main__':
              '--junitxml=./report/results.xml'])
 
         shutil.copy('./environment.xml', './report/temp')
-        os.system(f'allure serve ./report/temp') # ÔÚÖÕ¶ËÖ´ÐÐallure serve ./report/tempÃüÁî£¬
+        os.system(f'allure serve ./report/temp')
+        # åœ¨ç»ˆç«¯æ‰§è¡Œallure serve ./report/tempå‘½ä»¤ï¼Œ
 
     elif REPORT_TYPE == 'tm':
         pytest.main(['-vs', '--pytest-tmreport-name=testReport.html', '--pytest-tmreport-path=./report/tmreport'])
         webbrowser.open_new_tab(os.getcwd() + '/report/tmreport/testReport.html')
-
-
